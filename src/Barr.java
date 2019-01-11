@@ -7,8 +7,11 @@ public class Barr {
 
 
         int nrDrinka = 0;
-        System.out.println("Drink nr  - " + ++nrDrinka );
-        
+
+        System.out.println("Drink nr  - " + ++nrDrinka);
+        System.out.printf("Nazwa            %s\n", drink1.name);
+        System.out.printf("Cena             %d\n", drink1.price);
+        System.out.printf("Zawiera alkohol  %s\n", drink1.alcohol);
     }
-    
+
 }

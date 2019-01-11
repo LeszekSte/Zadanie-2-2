@@ -2,7 +2,7 @@ public class Barr {
     public static void main(String[] args) {
         Drink drink1 = new Drink();
         drink1.name = "Bloody Mary";
-        drink1.price = 8;
+        drink1.price = 8.50;
         drink1.alcohol = true;
 
 
@@ -10,8 +10,15 @@ public class Barr {
 
         System.out.println("Drink nr  - " + ++nrDrinka);
         System.out.printf("Nazwa            %s\n", drink1.name);
-        System.out.printf("Cena             %d\n", drink1.price);
-        System.out.printf("Zawiera alkohol  %s\n", drink1.alcohol);
+        System.out.printf("Cena             %.00f zł\n", drink1.price);
+
+        String alkoholPoPolsku = "nie";
+
+        if (drink1.alcohol) {
+            alkoholPoPolsku = "Tak";
+        }
+
+        System.out.printf("Zawiera alkohol  %s\n", alkoholPoPolsku);
     }
 
 }

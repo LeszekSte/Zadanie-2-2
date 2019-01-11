@@ -10,7 +10,7 @@ public class Barr {
 
         System.out.println("Drink nr  - " + ++nrDrinka);
         System.out.printf("Nazwa            %s\n", drink1.name);
-        System.out.printf("Cena             %.00f zł\n", drink1.price);
+        System.out.printf("Cena             %.2f zł\n", drink1.price);
 
         String alkoholPoPolsku = "nie";
 
